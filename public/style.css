@@ -1,0 +1,64 @@
+/* Custom styles to complement Bootstrap */
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.list-group-item {
+    border-radius: 5px !important;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 5px 8px;
+}
+
+.form-select {
+    display: inline-block;
+    width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .list-group-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .list-group-item > div:last-child {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    .form-select {
+        width: 60% !important;
+    }
+}
+
+/* Overdue task styling */
+.overdue {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+/* Completed task styling */
+.completed-task {
+    opacity: 0.8;
+    text-decoration: line-through;
+}

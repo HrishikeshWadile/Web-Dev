@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-const mongoURI = "mongodb+srv://hrishikeshwadile2510:SvSp3482tfZ5VIhQ@cluster0.whgysec.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = ; // Add your mongodb URI
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
